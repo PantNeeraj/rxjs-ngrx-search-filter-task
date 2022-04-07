@@ -1,0 +1,45 @@
+
+<div>
+    <mat-card><div>Add new vehicle</div><mat-icon (click)="close()">clear</mat-icon></mat-card>
+    <mat-divider></mat-divider>
+</div>
+
+<mat-dialog-content [formGroup]="form">
+    
+    <mat-form-field appearance="outline">
+        <mat-label>vehicle no</mat-label>
+        <input type="number" formControlName="vehicleNo" matInput />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>chassis no</mat-label>
+        <input type="number" formControlName="chassisNo" matInput />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Model no</mat-label>
+        <mat-select formControlName="modelNo">
+          <mat-option value="model-1">model-1</mat-option>
+          <mat-option value="model-2">model-2</mat-option>
+          <mat-option value="model-3">model-3</mat-option>
+          <mat-option value="model-4">model-4</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Vehicle type</mat-label>
+        <mat-select formControlName="vehicleType">
+          <mat-option value="vehicle-1">vehicle-1</mat-option>
+          <mat-option value="vehicle-2">vehicle-2</mat-option>
+          <mat-option value="vehicle-3">vehicle-3</mat-option>
+          <mat-option value="vehicle-4">vehicle-4</mat-option>
+        </mat-select>
+      </mat-form-field>
+     
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button"(click)="close()">Close</button>
+    <button class="mat-raised-button mat-primary"(click)="save()">{{actionBtn}}</button>
+ 
+</mat-dialog-actions>

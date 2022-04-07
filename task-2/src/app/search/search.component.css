@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content:left ;
+
+
+}
+.add-icon{
+    margin-right: 30px;
+    font-size: 40px;
+    text-align: center;
+   
+}
+button.create-new{
+    width: 50px;
+    height: 51px;
+    border-radius: 50px;
+    border: none;
+    background: lightskyblue;
+    color: white;
+    margin-top: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.inner_container{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:left ;  
+    margin-top: 30px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+  }
+  th{
+      font-size: 15px;
+      padding: 15px;
+  }

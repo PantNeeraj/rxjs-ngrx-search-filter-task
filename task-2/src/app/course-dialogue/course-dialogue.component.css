@@ -1,0 +1,20 @@
+mat-dialog-content{
+    width: 30rem;
+    display: flex;
+    justify-content: space-around;
+    min-height: 250px;
+    flex-wrap: wrap ;
+    margin-top: 20px;
+}
+mat-card{
+    display: flex;
+    justify-content: space-between;
+}
+mat-icon{
+    cursor: pointer;
+}
+mat-dialog-actions button{
+    margin-right: 10px;
+    text-align: right;
+    
+}

@@ -1,0 +1,32 @@
+{
+  "details": [
+    {
+      "id": 12,
+      "vehicleNo": 1234,
+      "chassisNo": 654321,
+      "modelNo": "model-2",
+      "vehicleType": "vehicle-2"
+    },
+    {
+      "id": 13,
+      "vehicleNo": 1234567,
+      "chassisNo": 1234567,
+      "modelNo": "model-2",
+      "vehicleType": "vehicle-2"
+    },
+    {
+      "id": 14,
+      "vehicleNo": 123,
+      "chassisNo": 876543,
+      "modelNo": "model-2",
+      "vehicleType": "vehicle-2"
+    },
+    {
+      "id": 15,
+      "vehicleNo": 123498765,
+      "chassisNo": 1234,
+      "modelNo": "model-4",
+      "vehicleType": "vehicle-4"
+    }
+  ]
+}

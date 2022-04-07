@@ -1,0 +1,49 @@
+<div class="container">
+ <div class="inner_container">
+  <button mat-icon-button class="create-new" matTooltip="Add/open dialog box">
+    <mat-icon  (click)="openDialog('addVehicle')">add</mat-icon>
+
+  </button>
+
+  <form>
+    <mat-form-field appearance="outline">
+      <mat-label>search vehicle no</mat-label>
+      <input matInput placeholder="search vehicle no" required autocomplete="off"  #myInput/>
+      
+      <mat-icon matSuffix >search</mat-icon>
+    </mat-form-field>
+    <!-- <span>searchTerm:{{reqData}}</span> -->
+  </form>
+ </div>
+ <!-- <button mat-icon-button class="create-new" matTooltip="Add row">
+  <mat-icon  (click)="addRow()">@</mat-icon>
+</button> -->
+
+</div>
+
+
+<table class="table" border="1"> 
+  <thead>
+    <tr>
+      <th >S.No.</th>
+      <th >vehicle no</th>
+      <th >chassis no</th>
+      <th >Model no</th>
+      <th >vehicle Type</th>
+      <th >Edit</th>
+      <th >Delete</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="allVehicleData$ | async">
+    <tr *ngFor="let user of allData ;let i=index">
+      <td>{{i+1}}</td>
+      <td>{{user.vehicleNo}}</td>
+      <td>{{user.chassisNo}}</td>
+      <td>{{user.modelNo}}</td>
+      <td>{{user.vehicleType}}</td>
+      <td><button  class="mat-raised-button"(click)="editRow(user,'editVehicle')" style="background-color :yellowgreen;color:white">Edit</button></td>
+      <td><button class="mat-raised-button" style="background-color :red;color:white" (click)="deleteRow(user)" (click)="openSnackBar('Row Deleted','Dismiss')">Delete</button></td>
+    </tr>
+   
+  </tbody>
+</table>
